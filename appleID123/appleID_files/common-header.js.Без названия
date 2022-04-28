@@ -1,0 +1,574 @@
+!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){n(1),n(2),e.exports=n(3)},function(e,t,n){(function(){!function(t,n,r,o){var i=[],a={_version:"3.11.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout((function(){t(n[e])}),0)},addTest:function(e,t,n){i.push({name:e,fn:t,options:n})},addAsyncTest:function(e){i.push({name:null,fn:e})}},s=function(){};s.prototype=a,s=new s;var l=[];function c(e,t){return typeof e===t}var d,p,u=r.documentElement,f="svg"===u.nodeName.toLowerCase();function m(e){var t=u.className,n=s._config.classPrefix||"";if(f&&(t=t.baseVal),s._config.enableJSClass){var r=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");t=t.replace(r,"$1"+n+"js$2")}s._config.enableClasses&&(e.length>0&&(t+=" "+n+e.join(" "+n)),f?u.className.baseVal=t:u.className=t)}function g(e,t){if("object"==typeof e)for(var n in e)d(e,n)&&g(n,e[n]);else{var r=(e=e.toLowerCase()).split("."),o=s[r[0]];if(2===r.length&&(o=o[r[1]]),void 0!==o)return s;t="function"==typeof t?t():t,1===r.length?s[r[0]]=t:(!s[r[0]]||s[r[0]]instanceof Boolean||(s[r[0]]=new Boolean(s[r[0]])),s[r[0]][r[1]]=t),m([(t&&!1!==t?"":"no-")+r.join("-")]),s._trigger(e,t)}return s}d=c(p={}.hasOwnProperty,"undefined")||c(p.call,"undefined")?function(e,t){return t in e&&c(e.constructor.prototype[t],"undefined")}:function(e,t){return p.call(e,t)},a._l={},a.on=function(e,t){this._l[e]||(this._l[e]=[]),this._l[e].push(t),s.hasOwnProperty(e)&&setTimeout((function(){s._trigger(e,s[e])}),0)},a._trigger=function(e,t){if(this._l[e]){var n=this._l[e];setTimeout((function(){var e;for(e=0;e<n.length;e++)(0,n[e])(t)}),0),delete this._l[e]}},s._q.push((function(){a.addTest=g}));var v=a._config.usePrefixes?"Moz O ms Webkit".split(" "):[];a._cssomPrefixes=v;var h=function(e){var t,r=F.length,o=n.CSSRule;if(void 0!==o){if(!e)return!1;if((t=(e=e.replace(/^@/,"")).replace(/-/g,"_").toUpperCase()+"_RULE")in o)return"@"+e;for(var i=0;i<r;i++){var a=F[i];if(a.toUpperCase()+"_"+t in o)return"@-"+a.toLowerCase()+"-"+e}return!1}};a.atRule=h;var y=a._config.usePrefixes?"Moz O ms Webkit".toLowerCase().split(" "):[];function w(){return"function"!=typeof r.createElement?r.createElement(arguments[0]):f?r.createElementNS.call(r,"http://www.w3.org/2000/svg",arguments[0]):r.createElement.apply(r,arguments)}a._domPrefixes=y;var b,x=(b=!("onblur"in u),function(e,t){var n;return!!e&&(t&&"string"!=typeof t||(t=w(t||"div")),!(n=(e="on"+e)in t)&&b&&(t.setAttribute||(t=w("div")),t.setAttribute(e,""),n="function"==typeof t[e],void 0!==t[e]&&(t[e]=void 0),t.removeAttribute(e)),n)});a.hasEvent=x,f||function(t,n){var r,o,i=t.html5||{},a=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,s=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,l=0,c={};function d(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function p(){var e=g.elements;return"string"==typeof e?e.split(" "):e}function u(e){var t=c[e._html5shiv];return t||(t={},l++,e._html5shiv=l,c[l]=t),t}function f(e,t,r){return t||(t=n),o?t.createElement(e):(r||(r=u(t)),!(i=r.cache[e]?r.cache[e].cloneNode():s.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e)).canHaveChildren||a.test(e)||i.tagUrn?i:r.frag.appendChild(i));var i}function m(e){e||(e=n);var t=u(e);return!g.shivCSS||r||t.hasCSS||(t.hasCSS=!!d(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),o||function(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return g.shivMethods?f(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+p().join().replace(/[\w\-:]+/g,(function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'}))+");return n}")(g,t.frag)}(e,t),e}!function(){try{var e=n.createElement("a");e.innerHTML="<xyz></xyz>",r="hidden"in e,o=1==e.childNodes.length||function(){n.createElement("a");var e=n.createDocumentFragment();return void 0===e.cloneNode||void 0===e.createDocumentFragment||void 0===e.createElement}()}catch(e){r=!0,o=!0}}();var g={elements:i.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:"3.7.3",shivCSS:!1!==i.shivCSS,supportsUnknownElements:o,shivMethods:!1!==i.shivMethods,type:"default",shivDocument:m,createElement:f,createDocumentFragment:function(e,t){if(e||(e=n),o)return e.createDocumentFragment();for(var r=(t=t||u(e)).frag.cloneNode(),i=0,a=p(),s=a.length;i<s;i++)r.createElement(a[i]);return r},addElements:function(e,t){var n=g.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),g.elements=n+" "+e,m(t)}};t.html5=g,m(n);var v,h=/^$|\b(?:all|print)\b/,y=!(o||(v=n.documentElement,void 0===n.namespaces||void 0===n.parentWindow||void 0===v.applyElement||void 0===v.removeNode||void 0===t.attachEvent));function w(e){for(var t,n=e.attributes,r=n.length,o=e.ownerDocument.createElement("html5shiv:"+e.nodeName);r--;)(t=n[r]).specified&&o.setAttribute(t.nodeName,t.nodeValue);return o.style.cssText=e.style.cssText,o}function b(e){var t,n,r=u(e),o=e.namespaces,i=e.parentWindow;if(!y||e.printShived)return e;function a(){clearTimeout(r._removeSheetTimer),t&&t.removeNode(!0),t=null}return void 0===o.html5shiv&&o.add("html5shiv"),i.attachEvent("onbeforeprint",(function(){a();for(var r,o,i,s=e.styleSheets,l=[],c=s.length,u=Array(c);c--;)u[c]=s[c];for(;i=u.pop();)if(!i.disabled&&h.test(i.media)){try{o=(r=i.imports).length}catch(e){o=0}for(c=0;c<o;c++)u.push(r[c]);try{l.push(i.cssText)}catch(e){}}l=function(e){for(var t,n=e.split("{"),r=n.length,o=RegExp("(^|[\\s,>+~])("+p().join("|")+")(?=[[\\s,>+~#.:]|$)","gi");r--;)(t=n[r]=n[r].split("}"))[t.length-1]=t[t.length-1].replace(o,"$1html5shiv\\:$2"),n[r]=t.join("}");return n.join("{")}(l.reverse().join("")),n=function(e){for(var t,n=e.getElementsByTagName("*"),r=n.length,o=RegExp("^(?:"+p().join("|")+")$","i"),i=[];r--;)t=n[r],o.test(t.nodeName)&&i.push(t.applyElement(w(t)));return i}(e),t=d(e,l)})),i.attachEvent("onafterprint",(function(){!function(e){for(var t=e.length;t--;)e[t].removeNode()}(n),clearTimeout(r._removeSheetTimer),r._removeSheetTimer=setTimeout(a,500)})),e.printShived=!0,e}g.type+=" print",g.shivPrint=b,b(n),e.exports&&(e.exports=g)}(void 0!==n?n:this,r);var S=function(){},E=function(){};function T(){var e=r.body;return e||((e=w(f?"svg":"body")).fake=!0),e}function C(e,t,n,o){var i,a,s,l,c="modernizr",d=w("div"),p=T();if(parseInt(n,10))for(;n--;)(s=w("div")).id=o?o[n]:c+(n+1),d.appendChild(s);return(i=w("style")).type="text/css",i.id="s"+c,(p.fake?p:d).appendChild(i),p.appendChild(d),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(r.createTextNode(e)),d.id=c,p.fake&&(p.style.background="",p.style.overflow="hidden",l=u.style.overflow,u.style.overflow="hidden",u.appendChild(p)),a=t(d,e),p.fake&&p.parentNode?(p.parentNode.removeChild(p),u.style.overflow=l,u.offsetHeight):d.parentNode.removeChild(d),!!a}function O(e,t,r){var o;if("getComputedStyle"in n){o=getComputedStyle.call(n,e,t);var i=n.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i)i[i.error?"error":"log"].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}else o=!t&&e.currentStyle&&e.currentStyle[r];return o}n.console&&(S=function(){var e=console.error?"error":"log";n.console[e].apply(n.console,Array.prototype.slice.call(arguments))},E=function(){var e=console.warn?"warn":"log";n.console[e].apply(n.console,Array.prototype.slice.call(arguments))}),a.load=function(){"yepnope"in n?(E("yepnope.js (aka Modernizr.load) is no longer included as part of Modernizr. yepnope appears to be available on the page, so we’ll use it to handle this call to Modernizr.load, but please update your code to use yepnope directly.\n See http://github.com/Modernizr/Modernizr/issues/1182 for more information."),n.yepnope.apply(n,[].slice.call(arguments,0))):S("yepnope.js (aka Modernizr.load) is no longer included as part of Modernizr. Get it from http://yepnopejs.com. See http://github.com/Modernizr/Modernizr/issues/1182 for more information.")};var _,k=(_=n.matchMedia||n.msMatchMedia)?function(e){var t=_(e);return t&&t.matches||!1}:function(e){var t=!1;return C("@media "+e+" { #modernizr { position: absolute; } }",(function(e){t="absolute"===O(e,null,"position")})),t};a.mq=k;var R={elem:w("modernizr")};s._q.push((function(){delete R.elem}));var L={style:R.elem.style};function N(e){return e.replace(/([A-Z])/g,(function(e,t){return"-"+t.toLowerCase()})).replace(/^ms-/,"-ms-")}function A(e){return e.replace(/([a-z])-([a-z])/g,(function(e,t,n){return t+n.toUpperCase()})).replace(/^-/,"")}function j(e,t,r,o){if(o=!c(o,"undefined")&&o,!c(r,"undefined")){var i=function(e,t){var r=e.length;if("CSS"in n&&"supports"in n.CSS){for(;r--;)if(n.CSS.supports(N(e[r]),t))return!0;return!1}if("CSSSupportsRule"in n){for(var o=[];r--;)o.push("("+N(e[r])+":"+t+")");return C("@supports ("+(o=o.join(" or "))+") { #modernizr { position: absolute; } }",(function(e){return"absolute"===O(e,null,"position")}))}}(e,r);if(!c(i,"undefined"))return i}for(var a,s,l,d,p,u=["modernizr","tspan","samp"];!L.style&&u.length;)a=!0,L.modElem=w(u.shift()),L.style=L.modElem.style;function f(){a&&(delete L.style,delete L.modElem)}for(l=e.length,s=0;s<l;s++)if(d=e[s],p=L.style[d],~(""+d).indexOf("-")&&(d=A(d)),void 0!==L.style[d]){if(o||c(r,"undefined"))return f(),"pfx"!==t||d;try{L.style[d]=r}catch(e){}if(L.style[d]!==p)return f(),"pfx"!==t||d}return f(),!1}function M(e,t){return function(){return e.apply(t,arguments)}}function P(e,t,n,r,o){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+v.join(i+" ")+i).split(" ");return c(t,"string")||c(t,"undefined")?j(a,t,r,o):function(e,t,n){var r;for(var o in e)if(e[o]in t)return!1===n?e[o]:c(r=t[e[o]],"function")?M(r,n||t):r;return!1}(a=(e+" "+y.join(i+" ")+i).split(" "),t,n)}s._q.unshift((function(){delete L.style})),a.testAllProps=P;var z=a.prefixed=function(e,t,n){return 0===e.indexOf("@")?h(e):(-1!==e.indexOf("-")&&(e=A(e)),t?P(e,t,n):P(e,"pfx"))},F=a._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];a._prefixes=F;a.prefixedCSS=function(e){var t=z(e);return t&&N(t)};function D(e,t,n){return P(e,void 0,void 0,t,n)}a.testAllProps=D;a.testProp=function(e,t,n){return j([e],void 0,t,n)};var I=a.testStyles=C;
+/*!
+{
+  "name": "a[download] Attribute",
+  "property": "adownload",
+  "caniuse": "download",
+  "tags": ["media", "attribute"],
+  "builderAliases": ["a_download"],
+  "notes": [{
+    "name": "WHATWG Spec",
+    "href": "https://developers.whatwg.org/links.html#downloading-resources"
+  }]
+}
+!*/
+s.addTest("adownload",!n.externalHost&&"download"in w("a")),
+/*!
+{
+  "name": "Application Cache",
+  "property": "applicationcache",
+  "caniuse": "offline-apps",
+  "tags": ["storage", "offline"],
+  "notes": [{
+    "name": "MDN Docs",
+    "href": "https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache"
+  }],
+  "polyfills": ["html5gears"]
+}
+!*/
+s.addTest("applicationcache","applicationCache"in n),
+/*!
+{
+  "name": "Blob constructor",
+  "property": "blobconstructor",
+  "aliases": ["blob-constructor"],
+  "builderAliases": ["blob_constructor"],
+  "caniuse": "blobbuilder",
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://w3c.github.io/FileAPI/#constructorBlob"
+  }],
+  "polyfills": ["blobjs"]
+}
+!*/
+s.addTest("blobconstructor",(function(){try{return!!new Blob}catch(e){return!1}}),{aliases:["blob-constructor"]}),
+/*!
+{
+  "name": "Canvas",
+  "property": "canvas",
+  "caniuse": "canvas",
+  "tags": ["canvas", "graphics"],
+  "polyfills": ["excanvas", "slcanvas"]
+}
+!*/
+s.addTest("canvas",(function(){var e=w("canvas");return!(!e.getContext||!e.getContext("2d"))})),
+/*!
+{
+  "name": "canvas blending support",
+  "property": "canvasblending",
+  "caniuse": "canvas-blending",
+  "tags": ["canvas"],
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://drafts.fxtf.org/compositing-1/"
+  }, {
+    "name": "Article",
+    "href": "https://web.archive.org/web/20171003232921/http://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/"
+  }]
+}
+!*/
+s.addTest("canvasblending",(function(){if(!1===s.canvas)return!1;var e=w("canvas").getContext("2d");try{e.globalCompositeOperation="screen"}catch(e){}return"screen"===e.globalCompositeOperation}));
+/*!
+{
+  "name": "canvas.toDataURL type support",
+  "property": ["todataurljpeg", "todataurlpng", "todataurlwebp"],
+  "tags": ["canvas"],
+  "builderAliases": ["canvas_todataurl_type"],
+  "notes": [{
+    "name": "MDN Docs",
+    "href": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement.toDataURL"
+  }]
+}
+!*/
+var U=w("canvas");s.addTest("todataurljpeg",(function(){var e=!1;try{e=!!s.canvas&&0===U.toDataURL("image/jpeg").indexOf("data:image/jpeg")}catch(e){}return e})),s.addTest("todataurlpng",(function(){var e=!1;try{e=!!s.canvas&&0===U.toDataURL("image/png").indexOf("data:image/png")}catch(e){}return e})),s.addTest("todataurlwebp",(function(){var e=!1;try{e=!!s.canvas&&0===U.toDataURL("image/webp").indexOf("data:image/webp")}catch(e){}return e})),
+/*!
+{
+  "name": "canvas winding support",
+  "property": "canvaswinding",
+  "tags": ["canvas"],
+  "notes": [{
+    "name": "Article",
+    "href": "https://web.archive.org/web/20170825024655/http://blogs.adobe.com/webplatform/2013/01/30/winding-rules-in-canvas/"
+  }]
+}
+!*/
+s.addTest("canvaswinding",(function(){if(!1===s.canvas)return!1;var e=w("canvas").getContext("2d");return e.rect(0,0,10,10),e.rect(2,2,6,6),!1===e.isPointInPath(5,5,"evenodd")})),
+/*!
+{
+  "name": "Canvas text",
+  "property": "canvastext",
+  "caniuse": "canvas-text",
+  "tags": ["canvas", "graphics"],
+  "polyfills": ["canvastext"]
+}
+!*/
+s.addTest("canvastext",(function(){return!1!==s.canvas&&"function"==typeof w("canvas").getContext("2d").fillText})),
+/*!
+{
+  "name": "Clipboard API",
+  "property": "clipboard",
+  "tags": ["clipboard"],
+  "authors": ["Markel Ferro (@MarkelFe)"],
+  "async": true,
+  "warnings": ["It may return false in non-HTTPS connections as the API is only available in secure contexts"],
+  "notes": [{
+    "name": "MDN Docs Clipboard Object",
+    "href": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard"
+  }, {
+    "name": "MDN Docs Clipboard API",
+    "href": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API"
+  }]
+}
+!*/
+s.addAsyncTest((function(){var e,t=["read","readText","write","writeText"];if(navigator.clipboard){g("clipboard",!0);for(var n=0;n<t.length;n++)e=!!navigator.clipboard[t[n]],g("clipboard."+t[n].toLowerCase(),e)}else g("clipboard",!1)})),
+/*!
+{
+  "name": "Content Editable",
+  "property": "contenteditable",
+  "caniuse": "contenteditable",
+  "notes": [{
+    "name": "WHATWG Spec",
+    "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable"
+  }]
+}
+!*/
+s.addTest("contenteditable",(function(){if("contentEditable"in u){var e=w("div");return e.contentEditable=!0,"true"===e.contentEditable}})),
+/*!
+{
+  "name": "CSS Animations",
+  "property": "cssanimations",
+  "caniuse": "css-animation",
+  "polyfills": ["transformie", "csssandpaper"],
+  "tags": ["css"],
+  "warnings": ["Android < 4 will pass this test, but can only animate a single property at a time"],
+  "notes": [{
+    "name": "Article: 'Dispelling the Android CSS animation myths'",
+    "href": "https://web.archive.org/web/20180602074607/https://daneden.me/2011/12/14/putting-up-with-androids-bullshit/"
+  }]
+}
+!*/
+s.addTest("cssanimations",D("animationName","a",!0)),
+/*!
+{
+  "name": "Appearance",
+  "property": "appearance",
+  "caniuse": "css-appearance",
+  "tags": ["css"],
+  "notes": [{
+    "name": "MDN Docs",
+    "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance"
+  }, {
+    "name": "CSS-Tricks CSS Almanac: appearance",
+    "href": "https://css-tricks.com/almanac/properties/a/appearance/"
+  }]
+}
+!*/
+s.addTest("appearance",D("appearance")),
+/*!
+{
+  "name": "CSS Columns",
+  "property": "csscolumns",
+  "caniuse": "multicolumn",
+  "tags": ["css"]
+}
+!*/
+function(){s.addTest("csscolumns",(function(){var e=!1,t=D("columnCount");try{(e=!!t)&&(e=new Boolean(e))}catch(e){}return e}));for(var e,t,n=["Width","Span","Fill","Gap","Rule","RuleColor","RuleStyle","RuleWidth","BreakBefore","BreakAfter","BreakInside"],r=0;r<n.length;r++)e=n[r].toLowerCase(),t=D("column"+n[r]),"breakbefore"!==e&&"breakafter"!==e&&"breakinside"!==e||(t=t||D(n[r])),s.addTest("csscolumns."+e,t)}(),
+/*!
+{
+  "name": "CSS Grid (old & new)",
+  "property": ["cssgrid", "cssgridlegacy"],
+  "authors": ["Faruk Ates"],
+  "tags": ["css"],
+  "notes": [{
+    "name": "The new, standardized CSS Grid",
+    "href": "https://www.w3.org/TR/css3-grid-layout/"
+  }, {
+    "name": "The _old_ CSS Grid (legacy)",
+    "href": "https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/"
+  }]
+}
+!*/
+s.addTest("cssgridlegacy",D("grid-columns","10px",!0)),s.addTest("cssgrid",D("grid-template-rows","none",!0));
+/*!
+{
+  "name": "CSS Supports",
+  "property": "supports",
+  "caniuse": "css-featurequeries",
+  "tags": ["css"],
+  "builderAliases": ["css_supports"],
+  "notes": [{
+    "name": "W3C Spec (The @supports rule)",
+    "href": "https://dev.w3.org/csswg/css3-conditional/#at-supports"
+  }, {
+    "name": "Related Github Issue",
+    "href": "https://github.com/Modernizr/Modernizr/issues/648"
+  }, {
+    "name": "W3C Spec (The CSSSupportsRule interface)",
+    "href": "https://dev.w3.org/csswg/css3-conditional/#the-csssupportsrule-interface"
+  }]
+}
+!*/
+var G="CSS"in n&&"supports"in n.CSS,$="supportsCSS"in n;s.addTest("supports",G||$),
+/*!
+{
+  "name": "CSS Filters",
+  "property": "cssfilters",
+  "caniuse": "css-filters",
+  "polyfills": ["polyfilter"],
+  "tags": ["css"],
+  "builderAliases": ["css_filters"],
+  "notes": [{
+    "name": "MDN Docs",
+    "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+  }]
+}
+!*/
+s.addTest("cssfilters",(function(){if(s.supports)return D("filter","blur(2px)");var e=w("a");return e.style.cssText=F.join("filter:blur(2px); "),!!e.style.length&&(void 0===r.documentMode||r.documentMode>9)})),
+/*!
+{
+  "name": "Flexbox",
+  "property": "flexbox",
+  "caniuse": "flexbox",
+  "tags": ["css"],
+  "notes": [{
+    "name": "The _new_ flexbox",
+    "href": "https://www.w3.org/TR/css-flexbox-1/"
+  }],
+  "warnings": [
+    "A `true` result for this detect does not imply that the `flex-wrap` property is supported; see the `flexwrap` detect."
+  ]
+}
+!*/
+s.addTest("flexbox",D("flexBasis","1px",!0)),
+/*!
+{
+  "name": "Flexbox (legacy)",
+  "property": "flexboxlegacy",
+  "tags": ["css"],
+  "polyfills": ["flexie"],
+  "notes": [{
+    "name": "The _old_ flexbox",
+    "href": "https://www.w3.org/TR/2009/WD-css3-flexbox-20090723/"
+  }]
+}
+!*/
+s.addTest("flexboxlegacy",D("boxDirection","reverse",!0)),
+/*!
+{
+  "name": "Flexbox (tweener)",
+  "property": "flexboxtweener",
+  "tags": ["css"],
+  "polyfills": ["flexie"],
+  "notes": [{
+    "name": "The _inbetween_ flexbox",
+    "href": "https://www.w3.org/TR/2011/WD-css3-flexbox-20111129/"
+  }],
+  "warnings": ["This represents an old syntax, not the latest standard syntax."]
+}
+!*/
+s.addTest("flexboxtweener",D("flexAlign","end",!0)),
+/*!
+{
+  "name": "CSS Generated Content Animations",
+  "property": "csspseudoanimations",
+  "tags": ["css"]
+}
+!*/
+s.addTest("csspseudoanimations",(function(){var e=!1;if(!s.cssanimations)return e;var t=["@",F.join("keyframes csspseudoanimations { from { font-size: 10px; } }@").replace(/\@$/,""),'#modernizr:before { content:" "; font-size:5px;',F.join("animation:csspseudoanimations 1ms infinite;"),"}"].join("");return I(t,(function(t){e="10px"===O(t,":before","font-size")})),e})),
+/*!
+{
+  "name": "CSS Transitions",
+  "property": "csstransitions",
+  "caniuse": "css-transitions",
+  "tags": ["css"]
+}
+!*/
+s.addTest("csstransitions",D("transition","all",!0)),
+/*!
+{
+  "name": "CSS Generated Content Transitions",
+  "property": "csspseudotransitions",
+  "tags": ["css"]
+}
+!*/
+s.addTest("csspseudotransitions",(function(){var e=!1;if(!s.csstransitions)return e;var t='#modernizr:before { content:" "; font-size:5px;'+F.join("transition:0s 100s;")+"}#modernizr.trigger:before { font-size:10px; }";return I(t,(function(t){O(t,":before","font-size"),t.className+="trigger",e="5px"===O(t,":before","font-size")})),e})),
+/*!
+{
+  "name": "CSS Reflections",
+  "caniuse": "css-reflections",
+  "property": "cssreflections",
+  "tags": ["css"]
+}
+!*/
+s.addTest("cssreflections",D("boxReflect","above",!0)),
+/*!
+{
+  "name": "CSS Regions",
+  "caniuse": "css-regions",
+  "authors": ["Mihai Balan"],
+  "property": "regions",
+  "tags": ["css"],
+  "builderAliases": ["css_regions"],
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://www.w3.org/TR/css3-regions/"
+  }]
+}
+!*/
+s.addTest("regions",(function(){if(f)return!1;var e=z("flowFrom"),t=z("flowInto"),n=!1;if(!e||!t)return n;var r,o,i=w("iframe"),a=w("div"),s=w("div"),l=w("div"),c="modernizr_flow_for_regions_check";s.innerText="M",a.style.cssText="top: 150px; left: 150px; padding: 0px;",l.style.cssText="width: 50px; height: 50px; padding: 42px;",l.style[e]=c,a.appendChild(s),a.appendChild(l),u.appendChild(a);var d=s.getBoundingClientRect();return s.style[t]=c,r=s.getBoundingClientRect(),o=parseInt(r.left-d.left,10),u.removeChild(a),42===o?n=!0:(u.appendChild(i),d=i.getBoundingClientRect(),i.style[t]=c,r=i.getBoundingClientRect(),d.height>0&&d.height!==r.height&&0===r.height&&(n=!0)),s=l=a=i=void 0,n})),
+/*!
+{
+  "name": "CSS Transforms",
+  "property": "csstransforms",
+  "caniuse": "transforms2d",
+  "tags": ["css"]
+}
+!*/
+s.addTest("csstransforms",(function(){return-1===navigator.userAgent.indexOf("Android 2.")&&D("transform","scale(1)",!0)})),
+/*!
+{
+  "name": "CSS Transforms 3D",
+  "property": "csstransforms3d",
+  "caniuse": "transforms3d",
+  "tags": ["css"],
+  "knownBugs": [
+    "Chrome may occasionally fail this test on some systems; more info: https://bugs.chromium.org/p/chromium/issues/detail?id=129004, however, the issue has since been closed (marked as fixed)."
+  ]
+}
+!*/
+s.addTest("csstransforms3d",(function(){return!!D("perspective","1px",!0)}));
+/*!
+{
+  "name": "postMessage",
+  "property": "postmessage",
+  "caniuse": "x-doc-messaging",
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://www.w3.org/TR/webmessaging/#crossDocumentMessages"
+  }],
+  "polyfills": ["easyxdm", "postmessage-jquery"],
+  "knownBugs": [
+    "structuredclones - Android 2&3 can not send a structured clone of dates, filelists or regexps.",
+    "Some old WebKit versions have bugs."
+  ],
+  "warnings": ["To be safe you should stick with object, array, number and pixeldata."]
+}
+!*/
+var q=!0;try{n.postMessage({toString:function(){q=!1}},"*")}catch(e){}s.addTest("postmessage",new Boolean("postMessage"in n)),s.addTest("postmessage.structuredclones",q),
+/*!
+{
+  "name": "QuerySelector",
+  "property": "queryselector",
+  "caniuse": "queryselector",
+  "tags": ["queryselector"],
+  "authors": ["Andrew Betts (@triblondon)"],
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://www.w3.org/TR/selectors-api/#queryselectorall"
+  }],
+  "polyfills": ["css-selector-engine"]
+}
+!*/
+s.addTest("queryselector","querySelector"in r&&"querySelectorAll"in r),
+/*!
+{
+  "name": "script[async]",
+  "property": "scriptasync",
+  "caniuse": "script-async",
+  "tags": ["script"],
+  "builderAliases": ["script_async"],
+  "authors": ["Theodoor van Donge"]
+}
+!*/
+s.addTest("scriptasync","async"in w("script")),
+/*!
+{
+  "name": "script[defer]",
+  "property": "scriptdefer",
+  "caniuse": "script-defer",
+  "tags": ["script"],
+  "builderAliases": ["script_defer"],
+  "authors": ["Theodoor van Donge"],
+  "warnings": ["Browser implementation of the `defer` attribute vary: https://stackoverflow.com/questions/3952009/defer-attribute-chrome#answer-3982619"],
+  "knownBugs": ["False positive in Opera 12"]
+}
+!*/
+s.addTest("scriptdefer","defer"in w("script")),
+/*!
+{
+  "name": "scrollToOptions dictionary",
+  "property": "scrolltooptions",
+  "caniuse": "mdn-api_scrolltooptions",
+  "notes": [{
+    "name": "MDN docs",
+    "href": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo"
+  }],
+  "authors": ["Oliver Tušla (@asmarcz)", "Chris Smith (@chris13524)"]
+}
+!*/
+s.addTest("scrolltooptions",(function(){var e=T(),t=n.pageYOffset,r=e.clientHeight<=n.innerHeight;if(r){var o=w("div");o.style.height=n.innerHeight-e.clientHeight+1+"px",o.style.display="block",e.appendChild(o)}n.scrollTo({top:1});var i=0!==n.pageYOffset;return r&&e.removeChild(o),n.scrollTo(0,t),i})),
+/*!
+{
+  "name": "ServiceWorker API",
+  "property": "serviceworker",
+  "caniuse": "serviceworkers",
+  "notes": [{
+    "name": "ServiceWorkers Explained",
+    "href": "https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md"
+  }]
+}
+!*/
+s.addTest("serviceworker","serviceWorker"in navigator),
+/*!
+{
+  "name": "Local Storage",
+  "property": "localstorage",
+  "caniuse": "namevalue-storage",
+  "tags": ["storage"],
+  "polyfills": [
+    "joshuabell-polyfill",
+    "cupcake",
+    "storagepolyfill",
+    "amplifyjs",
+    "yui-cacheoffline"
+  ]
+}
+!*/
+s.addTest("localstorage",(function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})),
+/*!
+{
+  "name": "Session Storage",
+  "property": "sessionstorage",
+  "tags": ["storage"],
+  "polyfills": ["joshuabell-polyfill", "cupcake", "storagepolyfill"]
+}
+!*/
+s.addTest("sessionstorage",(function(){var e="modernizr";try{return sessionStorage.setItem(e,e),sessionStorage.removeItem(e),!0}catch(e){return!1}})),
+/*!
+{
+  "name": "style[scoped]",
+  "property": "stylescoped",
+  "caniuse": "style-scoped",
+  "tags": ["dom"],
+  "builderAliases": ["style_scoped"],
+  "authors": ["Cătălin Mariș"],
+  "notes": [{
+    "name": "WHATWG Spec",
+    "href": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-scoped"
+  }],
+  "polyfills": ["scoped-styles"]
+}
+!*/
+s.addTest("stylescoped","scoped"in w("style")),
+/*!
+{
+  "name": "SVG",
+  "property": "svg",
+  "caniuse": "svg",
+  "tags": ["svg"],
+  "authors": ["Erik Dahlstrom"],
+  "polyfills": [
+    "svgweb",
+    "raphael",
+    "canvg",
+    "svg-boilerplate",
+    "sie",
+    "fabricjs"
+  ]
+}
+!*/
+s.addTest("svg",!!r.createElementNS&&!!r.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect),
+/*!
+{
+  "name": "SVG as an <img> tag source",
+  "property": "svgasimg",
+  "caniuse": "svg-img",
+  "tags": ["svg"],
+  "aliases": ["svgincss"],
+  "authors": ["Chris Coyier"],
+  "notes": [{
+    "name": "HTML5 Spec",
+    "href": "https://www.w3.org/TR/html5/embedded-content-0.html#the-img-element"
+  }]
+}
+!*/
+s.addTest("svgasimg",r.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"));var B={}.toString;
+/*!
+{
+  "name": "SVG clip paths",
+  "property": "svgclippaths",
+  "tags": ["svg"],
+  "notes": [{
+    "name": "Demo",
+    "href": "http://srufaculty.sru.edu/david.dailey/svg/newstuff/clipPath4.svg"
+  }]
+}
+!*/s.addTest("svgclippaths",(function(){return!!r.createElementNS&&/SVGClipPath/.test(B.call(r.createElementNS("http://www.w3.org/2000/svg","clipPath")))})),
+/*!
+{
+  "name": "SVG filters",
+  "property": "svgfilters",
+  "caniuse": "svg-filters",
+  "tags": ["svg"],
+  "builderAliases": ["svg_filters"],
+  "authors": ["Erik Dahlstrom"],
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://www.w3.org/TR/SVG11/filters.html"
+  }]
+}
+!*/
+s.addTest("svgfilters",(function(){var e=!1;try{e="SVGFEColorMatrixElement"in n&&2===SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_SATURATE}catch(e){}return e})),
+/*!
+{
+  "name": "SVG foreignObject",
+  "property": "svgforeignobject",
+  "tags": ["svg"],
+  "notes": [{
+    "name": "W3C Spec",
+    "href": "https://www.w3.org/TR/SVG11/extend.html"
+  }]
+}
+!*/
+s.addTest("svgforeignobject",(function(){return!!r.createElementNS&&/SVGForeignObject/.test(B.call(r.createElementNS("http://www.w3.org/2000/svg","foreignObject")))})),
+/*!
+{
+  "name": "Inline SVG",
+  "property": "inlinesvg",
+  "caniuse": "svg-html5",
+  "tags": ["svg"],
+  "notes": [{
+    "name": "Test page",
+    "href": "https://paulirish.com/demo/inline-svg"
+  }, {
+    "name": "Test page and results",
+    "href": "https://codepen.io/eltonmesquita/full/GgXbvo/"
+  }],
+  "polyfills": ["inline-svg-polyfill"],
+  "knownBugs": ["False negative on some Chromia browsers."]
+}
+!*/
+s.addTest("inlinesvg",(function(){var e=w("div");return e.innerHTML="<svg/>","http://www.w3.org/2000/svg"===("undefined"!=typeof SVGRect&&e.firstChild&&e.firstChild.namespaceURI)})),
+/*!
+{
+  "name": "SVG SMIL animation",
+  "property": "smil",
+  "caniuse": "svg-smil",
+  "tags": ["svg"],
+  "notes": [{
+  "name": "W3C Spec",
+  "href": "https://www.w3.org/AudioVideo/"
+  }]
+}
+!*/
+s.addTest("smil",(function(){return!!r.createElementNS&&/SVGAnimate/.test(B.call(r.createElementNS("http://www.w3.org/2000/svg","animate")))})),function(){var e,t,n,r,o,a;for(var d in i)if(i.hasOwnProperty(d)){if(e=[],(t=i[d]).name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(n=0;n<t.options.aliases.length;n++)e.push(t.options.aliases[n].toLowerCase());for(r=c(t.fn,"function")?t.fn():t.fn,o=0;o<e.length;o++)1===(a=e[o].split(".")).length?s[a[0]]=r:(s[a[0]]&&(!s[a[0]]||s[a[0]]instanceof Boolean)||(s[a[0]]=new Boolean(s[a[0]])),s[a[0]][a[1]]=r),l.push((r?"":"no-")+a.join("-"))}}(),m(l),delete a.addTest,delete a.addAsyncTest;for(var V=0;V<s._q.length;V++)s._q[V]();t.Modernizr=s}(window,window,document),e.exports=window.Modernizr}).call(window)},function(e,t){(function(){
+/*!
+ * Detectizr v2.2.0
+ * http://barisaydinoglu.github.com/Detectizr/
+ *
+ * Written by Baris Aydinoglu (http://baris.aydinoglu.info) - Copyright 2012
+ * Released under the MIT license
+ *
+ * Date: 2015-09-28T21:37Z
+ */
+window.Detectizr=function(e,t,n,r){var o,i,a={},s=e.Modernizr,l=["tv","tablet","mobile","desktop"],c={addAllFeaturesAsClass:!1,detectDevice:!0,detectDeviceModel:!0,detectScreen:!0,detectOS:!0,detectBrowser:!0,detectPlugins:!0},d=[{name:"adobereader",substrs:["Adobe","Acrobat"],progIds:["AcroPDF.PDF","PDF.PDFCtrl.5"]},{name:"flash",substrs:["Shockwave Flash"],progIds:["ShockwaveFlash.ShockwaveFlash.1"]},{name:"wmplayer",substrs:["Windows Media"],progIds:["wmplayer.ocx"]},{name:"silverlight",substrs:["Silverlight"],progIds:["AgControl.AgControl"]},{name:"quicktime",substrs:["QuickTime"],progIds:["QuickTime.QuickTime"]}],p=/[\t\r\n]/g,u=n.documentElement;function f(e){return a.browser.userAgent.indexOf(e)>-1}function m(e){return e.test(a.browser.userAgent)}function g(e){return e.exec(a.browser.userAgent)}function v(e){return null==e?"":String(e).replace(/((\s|\-|\.)+[a-z0-9])/g,(function(e){return e.toUpperCase().replace(/(\s|\-|\.)/g,"")}))}function h(e,t,n){e&&(e=v(e),t&&(y(e+(t=v(t)),!0),n&&y(e+t+"_"+n,!0)))}function y(e,t){e&&s&&(c.addAllFeaturesAsClass?s.addTest(e,t):(t="function"==typeof t?t():t)?s.addTest(e,!0):(delete s[e],function(e,t){var n=t||"",r=1===e.nodeType&&(e.className?(" "+e.className+" ").replace(p," "):"");if(r){for(;r.indexOf(" "+n+" ")>=0;)r=r.replace(" "+n+" "," ");e.className=t?function(e){return e.replace(/^\s+|\s+$/g,"")}(r):""}}(u,e)))}function w(e,t){e.version=t;var n=t.split(".");n.length>0?(n=n.reverse(),e.major=n.pop(),n.length>0?(e.minor=n.pop(),n.length>0?(n=n.reverse(),e.patch=n.join(".")):e.patch="0"):e.minor="0"):e.major="0"}function b(){e.clearTimeout(o),o=e.setTimeout((function(){i=a.device.orientation,e.innerHeight>e.innerWidth?a.device.orientation="portrait":a.device.orientation="landscape",y(a.device.orientation,!0),i!==a.device.orientation&&y(i,!1)}),10)}function x(e){var n,r,o,i,a,s=t.plugins;for(i=s.length-1;i>=0;i--){for(r=(n=s[i]).name+n.description,o=0,a=e.length;a>=0;a--)-1!==r.indexOf(e[a])&&(o+=1);if(o===e.length)return!0}return!1}function S(e){var t;for(t=e.length-1;t>=0;t--)try{new ActiveXObject(e[t])}catch(e){}return!1}function E(r){var o,i,p,u,E,T,C;if((c=function e(t,n){var r,o,i;if(arguments.length>2)for(r=1,o=arguments.length;r<o;r+=1)e(t,arguments[r]);else for(i in n)n.hasOwnProperty(i)&&(t[i]=n[i]);return t}({},c,r||{})).detectDevice){for(a.device={type:"",model:"",orientation:""},p=a.device,m(/googletv|smarttv|smart-tv|internet.tv|netcast|nettv|appletv|boxee|kylo|roku|dlnadoc|roku|pov_tv|hbbtv|ce\-html/)?(p.type=l[0],p.model="smartTv"):m(/xbox|playstation.3|wii/)?(p.type=l[0],p.model="gameConsole"):m(/ip(a|ro)d/)?(p.type=l[1],p.model="ipad"):m(/tablet/)&&!m(/rx-34/)||m(/folio/)?(p.type=l[1],p.model=String(g(/playbook/)||"")):m(/linux/)&&m(/android/)&&!m(/fennec|mobi|htc.magic|htcX06ht|nexus.one|sc-02b|fone.945/)?(p.type=l[1],p.model="android"):m(/kindle/)||m(/mac.os/)&&m(/silk/)?(p.type=l[1],p.model="kindle"):m(/gt-p10|sc-01c|shw-m180s|sgh-t849|sch-i800|shw-m180l|sph-p100|sgh-i987|zt180|htc(.flyer|\_flyer)|sprint.atp51|viewpad7|pandigital(sprnova|nova)|ideos.s7|dell.streak.7|advent.vega|a101it|a70bht|mid7015|next2|nook/)||m(/mb511/)&&m(/rutem/)?(p.type=l[1],p.model="android"):m(/bb10/)?(p.type=l[1],p.model="blackberry"):(p.model=g(/iphone|ipod|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec|j2me/),null!==p.model?(p.type=l[2],p.model=String(p.model)):(p.model="",m(/bolt|fennec|iris|maemo|minimo|mobi|mowser|netfront|novarra|prism|rx-34|skyfire|tear|xv6875|xv6975|google.wireless.transcoder/)||m(/opera/)&&m(/windows.nt.5/)&&m(/htc|xda|mini|vario|samsung\-gt\-i8000|samsung\-sgh\-i9/)?p.type=l[2]:m(/windows.(nt|xp|me|9)/)&&!m(/phone/)||m(/win(9|.9|nt)/)||m(/\(windows 8\)/)?p.type=l[3]:m(/macintosh|powerpc/)&&!m(/silk/)?(p.type=l[3],p.model="mac"):m(/linux/)&&m(/x11/)||m(/solaris|sunos|bsd/)||m(/cros/)?p.type=l[3]:m(/bot|crawler|spider|yahoo|ia_archiver|covario-ids|findlinks|dataparksearch|larbin|mediapartners-google|ng-search|snappy|teoma|jeeves|tineye/)&&!m(/mobile/)?(p.type=l[3],p.model="crawler"):p.type=l[2])),o=0,i=l.length;o<i;o+=1)y(l[o],p.type===l[o]);c.detectDeviceModel&&y(v(p.model),!0)}if(c.detectScreen&&(p.screen={},s&&s.mq&&(s.mq("only screen and (max-width: 240px)")?(p.screen.size="veryVerySmall",y("veryVerySmallScreen",!0)):s.mq("only screen and (max-width: 320px)")?(p.screen.size="verySmall",y("verySmallScreen",!0)):s.mq("only screen and (max-width: 480px)")&&(p.screen.size="small",y("smallScreen",!0)),p.type!==l[1]&&p.type!==l[2]||s.mq("only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)")&&(p.screen.resolution="high",y("highresolution",!0))),p.type===l[1]||p.type===l[2]?(e.onresize=function(e){b()},b()):(p.orientation="landscape",y(p.orientation,!0))),c.detectOS&&(a.os={},u=a.os,""!==p.model&&("ipad"===p.model||"iphone"===p.model||"ipod"===p.model?(u.name="ios",w(u,(m(/os\s([\d_]+)/)?RegExp.$1:"").replace(/_/g,"."))):"android"===p.model?(u.name="android",w(u,m(/android\s([\d\.]+)/)?RegExp.$1:"")):"blackberry"===p.model?(u.name="blackberry",w(u,m(/version\/([^\s]+)/)?RegExp.$1:"")):"playbook"===p.model&&(u.name="blackberry",w(u,m(/os ([^\s]+)/)?RegExp.$1.replace(";",""):""))),u.name||(f("win")||f("16bit")?(u.name="windows",f("windows nt 10")?w(u,"10"):f("windows nt 6.3")?w(u,"8.1"):f("windows nt 6.2")||m(/\(windows 8\)/)?w(u,"8"):f("windows nt 6.1")?w(u,"7"):f("windows nt 6.0")?w(u,"vista"):f("windows nt 5.2")||f("windows nt 5.1")||f("windows xp")?w(u,"xp"):f("windows nt 5.0")||f("windows 2000")?w(u,"2k"):f("winnt")||f("windows nt")?w(u,"nt"):f("win98")||f("windows 98")?w(u,"98"):(f("win95")||f("windows 95"))&&w(u,"95")):f("mac")||f("darwin")?(u.name="mac os",f("68k")||f("68000")?w(u,"68k"):f("ppc")||f("powerpc")?w(u,"ppc"):f("os x")&&w(u,(m(/os\sx\s([\d_]+)/)?RegExp.$1:"os x").replace(/_/g,"."))):f("webtv")?u.name="webtv":f("x11")||f("inux")?u.name="linux":f("sunos")?u.name="sun":f("irix")?u.name="irix":f("freebsd")?u.name="freebsd":f("bsd")&&(u.name="bsd")),u.name&&(y(u.name,!0),u.major&&(h(u.name,u.major),u.minor&&h(u.name,u.major,u.minor))),m(/\sx64|\sx86|\swin64|\swow64|\samd64/)?u.addressRegisterSize="64bit":u.addressRegisterSize="32bit",y(u.addressRegisterSize,!0)),c.detectBrowser&&(E=a.browser,m(/opera|webtv/)||!m(/msie\s([\d\w\.]+)/)&&!f("trident")?f("firefox")?(E.engine="gecko",E.name="firefox",w(E,m(/firefox\/([\d\w\.]+)/)?RegExp.$1:"")):f("gecko/")?E.engine="gecko":f("opera")?(E.name="opera",E.engine="presto",w(E,m(/version\/([\d\.]+)/)?RegExp.$1:m(/opera(\s|\/)([\d\.]+)/)?RegExp.$2:"")):f("konqueror")?E.name="konqueror":f("edge")?(E.engine="webkit",E.name="edge",w(E,m(/edge\/([\d\.]+)/)?RegExp.$1:"")):f("chrome")?(E.engine="webkit",E.name="chrome",w(E,m(/chrome\/([\d\.]+)/)?RegExp.$1:"")):f("iron")?(E.engine="webkit",E.name="iron"):f("crios")?(E.name="chrome",E.engine="webkit",w(E,m(/crios\/([\d\.]+)/)?RegExp.$1:"")):f("applewebkit/")?(E.name="safari",E.engine="webkit",w(E,m(/version\/([\d\.]+)/)?RegExp.$1:"")):f("mozilla/")&&(E.engine="gecko"):(E.engine="trident",E.name="ie",!e.addEventListener&&n.documentMode&&7===n.documentMode?w(E,"8.compat"):m(/trident.*rv[ :](\d+)\./)?w(E,RegExp.$1):w(E,m(/trident\/4\.0/)?"8":RegExp.$1)),E.name&&(y(E.name,!0),E.major&&(h(E.name,E.major),E.minor&&h(E.name,E.major,E.minor))),y(E.engine,!0),E.language=t.userLanguage||t.language,y(E.language,!0)),c.detectPlugins){for(E.plugins=[],o=d.length-1;o>=0;o--)T=d[o],C=!1,e.ActiveXObject?C=S(T.progIds):t.plugins&&(C=x(T.substrs)),C&&(E.plugins.push(T.name),y(T.name,!0));t.javaEnabled()&&(E.plugins.push("java"),y("java",!0))}}return a.detect=function(e){return E(e)},a.init=function(){void 0!==a&&(a.browser={userAgent:(t.userAgent||t.vendor||e.opera).toLowerCase()},a.detect())},a.init(),a}(this,this.navigator,this.document),e.exports=window.Detectizr}).call(window)},function(e,t){(function(){"use strict";var t,n,r,o,i,a,s,l,c,d,p,u;t=window,o=(r={URL:"/jslog",METHOD:"POST",EXCEPTION_PRETEXT:"APPLE ID : ",LOG_LEVEL:"ERROR",ALLOWED_LOG_LEVELS:["ERROR","DEBUG","OFF","INFO"],WARN_CAPTURE_CONSOLE_COLOR:"background: #FFF0F0; color: red",NAMESPACE_FOR_PM:"pmrpc.",POST_MESSAGE_LOG_STATUS:"ON"}).URL,i=r.LOG_LEVEL,a=r.NAMESPACE_FOR_PM,s="",l="",c=r.POST_MESSAGE_LOG_STATUS,u={log:function(e,t){if(function(e){var t=" type, title, message are mandatory. ";if(void 0===e)throw new d("logObject is not defined.");if(void 0===e.type)throw new d("logObject.type is not defined."+t);if(void 0===e.title)throw new d("logObject.title is not defined."+t);if(void 0===e.message)throw new d("logObject.message is not defined."+t);return!0}(e)){var a=function(){!function(e,t){if(e&&"string"==typeof e&&t&&"string"==typeof t)try{window.sessionStorage&&sessionStorage.setItem(e,t)}catch(e){}}(r.EXCEPTION_PRETEXT,"Logging transaction failed or cancelled at."+o)};e.message=r.EXCEPTION_PRETEXT+e.message,void 0!==e.details?e.details.pageVisibilityState=document.visibilityState:e.details={pageVisibilityState:document.visibilityState},e.details&&(e.details=JSON.stringify(e.details)),t&&p(t);try{var c,u=new XMLHttpRequest;if(u.open(r.METHOD,o,!0),u.setRequestHeader("Content-type","application/json"),u.setRequestHeader("Accept","application/json"),u.setRequestHeader("scnt",s),u.setRequestHeader("x-csrf-token",l),void 0!==n)for(c in n)u.setRequestHeader(c,n[c]);u.addEventListener("error",a),u.addEventListener("abort",a),u.onreadystatechange=function(){u.status},"OFF"!==i&&("INFO"===i||"ERROR"===i?"ERROR"!==e.type.toUpperCase().trim()&&"INFO"!==e.type.toUpperCase().trim()||u.send(JSON.stringify(e)):"DEBUG"===i&&u.send(JSON.stringify(e)))}catch(e){}}},onerror:function(e){setTimeout((function(){throw e}),0)},getLoggingEndpoint:function(){return o},setLoggingEndpoint:function(e){(function(e){if(!e)throw new d("Invalid endpoint URL: "+e);return!0})(e)&&(o=e)},setGlobalLogLevel:function(e){e&&"string"==typeof e&&e.toUpperCase().trim()&&-1!==r.ALLOWED_LOG_LEVELS.indexOf(e.toUpperCase().trim())&&(i=e.toUpperCase().trim())},getGlobalLogLevel:function(e){return i},setSCNT:p=function(e){if(!e||"NULL"===e.toString().toUpperCase().trim()||"UNDEFINED"===e.toString().toUpperCase().trim())throw new d("SCNT token is not valid.");s=e},setCSRF:function(e){if(!e||"NULL"===e.toString().toUpperCase().trim()||"UNDEFINED"===e.toString().toUpperCase().trim())throw new d("CSRF token is not valid.");l=e},getNamespaceForPM:function(){return a},setNamespaceForPM:function(e){"string"==typeof e&&e.trim()&&(a=e)},getPMLoggingStatus:function(){return c},setPMLoggingStatus:function(e){c="string"==typeof e&&e.trim()&&-1!==["ON","OFF"].indexOf(e.toUpperCase().trim())?e.toUpperCase().trim():r.POST_MESSAGE_LOG_STATUS},setHeaders:function(e){void 0!==e&&(n=e)}},((d=function(e){this.name="IllegalLogException",this.message=r.EXCEPTION_PRETEXT+e,this.stack=(new Error).stack}).prototype=Object.create(Error.prototype)).constructor=d,t.AppleID=t.AppleID||{},t.AppleID.service=t.AppleID.service||{},t.AppleID.service.JSLogger=t.AppleID.service.JSLogger||u,window.onerror=function(e,n,o,i,s){if("ON"===c){var l={jsonrpc:"2.0",method:"log",params:[{data:"AppleAuth failed to load."}],id:parseInt(1e16*Math.random()).toString()};window.parent.postMessage(a+JSON.stringify(l),"*")}t.AppleID.service.JSLogger.log({title:s&&(s.name||"ERROR"),type:r.LOG_LEVEL,message:e,stacktrace:s&&(s.stack||JSON.stringify(s)),details:{file:n,lineno:o,colno:i,caught:"NO"}})},e.exports=window.AppleID.service.JSLogger}).call(window)}]);
